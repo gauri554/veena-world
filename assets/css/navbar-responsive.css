@@ -1,0 +1,221 @@
+ /* ✅ Mobile/Tablet only */
+    @media (max-width: 991.98px) {
+      .navbar-top .container {
+        flex-direction: column; /* stack rows */
+        align-items: stretch;
+      }
+
+      /* First row: toggle + logo + search */
+      .navbar-top .row-1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      }
+      .navbar-top .row-1 form {
+        flex: 1; /* search expands */
+      }
+
+
+     .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E<path stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+     
+      .nav-logo img{
+        height: 20px;  /* slightly smaller logo on mobile */
+      }
+    
+    }
+
+    /* ✅ Desktop view stays EXACTLY same */
+    @media (min-width: 992px) {
+      .navbar-top .row-1,
+      .navbar-top .row-2 {
+        display: contents; /* flatten so it looks like your original flex layout */
+      }
+      .navbar-top .container {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+      }
+    }
+
+
+    
+/* -----------------------
+   Responsive Tweaks
+----------------------- */
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+  .search-bar {
+    max-width: 350px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  
+  .top-actions a {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+}
+
+/* Mobiles (≤767px) */
+@media (max-width: 767px) {
+  .navbar-top .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    margin: 14px 0;
+    height: 34px;
+    font-size: 14px;
+    padding-left: 2rem !important;
+  }
+
+  .navbar-nav {
+    text-align: left;
+  }
+
+
+  .top-actions {
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .top-actions a {
+    font-size: 14px;
+  }
+
+  .signin {
+    font-size: 13px;
+  }
+
+  .search-bar::placeholder{
+    font-size: 12px;
+  }
+  .search-bar + .bi-search {
+    font-size: 12px;
+}
+
+
+
+
+
+/* Original CSS Below - Do Not Edit */
+    @media (max-width: 991.98px) {
+      .navbar-top .row-1,
+      .navbar-top .row-2 {
+        width: 100%;
+      }
+
+      .navbar-top .row-1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .navbar-top .row-1 form {
+        flex: 1; /* search bar grows */
+      }
+
+      .navbar-top .row-2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .navbar-toggler {
+        display: block; /* show toggle in row-1 */
+        color: beige;
+        border: none;
+      }
+    }
+  }
+
+ /* Mobile only (≤ 576px) */
+@media (max-width: 576px) {
+  .top-actions {
+    flex-wrap: nowrap;   /* keep items in one row */
+    gap: 0rem;         /* smaller spacing between items */
+  }
+
+  .top-actions a {
+    font-size: 0.6rem;   /* smaller text for mobile */
+    padding: 0.2rem 0.4rem;
+  }
+
+  /* Hide all text except icons */
+ 
+  
+  .top-actions .signin-text {
+    display: none;
+  }
+
+  /* Keep Sign in icon visible */
+  .top-actions .signin i {
+    font-size: 1.5rem; /* adjust icon size if needed */
+  }
+}
+
+/* Extra small screens ≤ 310px */
+@media (max-width: 310px) {
+  .top-actions {
+    flex-wrap: wrap  ; /* keep items in one row */
+    gap: 0rem;         /* very tight spacing */
+  }
+
+  .top-actions a {
+    font-size: 0.5rem;   /* smaller text */
+    padding: 0.15rem 0.3rem; /* tighter padding */
+  }
+
+  /* Hide all text except icons */
+ 
+  .top-actions .signin-text {
+    display: none;
+  }
+
+  /* Keep Sign in icon visible and adjust size */
+  .top-actions .signin i {
+    font-size: 1rem;
+  }
+
+   .search-bar {
+    max-width: 150px;
+    margin: 10px 0;
+    height: 30px;
+    font-size: 8px;
+    padding-left: 1.9rem !important;
+  }
+
+  .search-bar::placeholder{
+    font-size: 10px;
+  }
+  .search-bar + .bi-search {
+    font-size: 10px;
+}
+
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .top-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .top-actions a {
+    font-size: 14px;
+  }
+}
+

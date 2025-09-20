@@ -1,0 +1,140 @@
+.navbar-top {
+      background-color: #0b1c39; /* dark blue */
+      padding: 8px 0;
+    }
+    .navbar-bottom {
+      background-color: #0b1c39; /* dark blue */
+    }
+    .search-bar {
+      width: 300px;
+      border-radius: 20px;
+    }
+    @media(max-width: 991px) {
+      .search-bar {
+        width: 100%; /* full width on mobile */
+        margin: 10px 0;
+      }
+      .top-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+    .top-btn {
+      color: #ffc107;
+      font-weight: bold;
+      margin-right: 15px;
+    
+     
+    }
+    .phone-btn {
+      background: #1a3b7a;
+      color: #fff;
+      border-radius: 25px;
+      padding: 5px 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+       text-decoration: none;
+    }
+    .phone-btn i {
+      margin-right: 5px;
+     
+    }
+    .signin {
+      color: #fff;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .navbar-bottom .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      padding: 10px 15px;
+    }
+    .navbar-bottom .nav-link:hover {
+      color: #ffc107 !important;
+    }
+
+    .search-bar {
+  border-radius: 25px;      /* rounded like screenshot */
+  border: 1px solid #ccc;   /* subtle border like screenshot */
+  height: 38px;             /* adjust height */
+  font-size: 16px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #999;       /* darker border on focus */
+  box-shadow: none;         /* clean look */
+}
+
+
+.search-bar {
+  max-width: 700px;   /* wide on desktop */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;  /* full width on mobile */
+  }
+}
+
+/* Large desktops (≥1200px) */
+@media (min-width: 1200px) {
+  .search-bar {
+    max-width: 700px;
+  }
+}
+
+/* Laptops / small desktops (992px – 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .search-bar {
+    max-width: 600px;
+  }
+}
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .search-bar {
+    max-width: 400px;
+  }
+}
+
+.signin {
+  text-decoration: none;
+      
+  font-size: 12px;    /* smaller text */
+}
+
+
+/* Default (desktop/laptop) */
+.navbar-nav .nav-item {
+  margin: 0 9px;   /* wider spacing */
+}
+
+/* Tablets (768px – 991px) */
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    margin: 0 8px;  /* medium spacing */
+  }
+}
+
+/* Mobiles (≤767px) */
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    margin: 0;   /* vertical spacing since items stack */
+  }
+}
+
+
+
+
+/* -----------------------
+   Top Actions (Travel Planner, Phone, Sign in)
+----------------------- */
+.top-actions a {
+  margin-left: 20px;
+  font-size: 14px;
+  white-space: nowrap; /* prevent text breaking */
+}
+
