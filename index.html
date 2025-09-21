@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena World</title>
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="nav"></div>
+
+      <!------Hero section------>
+    <div class="hero-content">
+      <div class="hero-section">
+       <div class="lanterns">
+        </div>
+        <img
+          src="/tour/assets/img/hero banner.webp"  
+          class="card-img-bottom"
+          alt="Hero banner"
+        />
+      </div>
+    </div>
+    </div>
+     <script>
+    // Load navbar.html into #navbar div
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
+  </script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

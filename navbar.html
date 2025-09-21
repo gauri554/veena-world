@@ -25,7 +25,7 @@
         </button>
         <!-- Logo -->
       <a class="navbar-brand fw-bold text-white nav-logo" href="#">
-        <img src="assets/img/veena-world-logo.svg" alt="Veena World" height="30"   class="d-none d-md-block">
+        <img src="assets/img/veena-world-logo.svg" alt="Veena World" height="30"  class="d-none d-md-block">
 <img src="assets/img/veena-world-small-logo.svg" alt="Veena World Small Logo" height="30"class="d-block d-md-none">
       </a>
 
@@ -36,7 +36,7 @@
     class="form-control search-bar ps-5 " 
     type="search" 
     placeholder='Search "Europe"'>
-  <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-dark"></i>
+  <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
 </form>
 
     </div>
@@ -59,34 +59,402 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
         <ul class="navbar-nav">
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">India</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">North India</a></li>
-              <li><a class="dropdown-item" href="#">South India</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" href="#india" role="button" data-bs-toggle="dropdown">India</a>
+
+            <div class="dropdown-menu p-3 mega-dropdown" style="width:1000px;">
+
+              <div class="d-flex flex-wrap gap-3 border-bottom pb-2 mb-3">
+    <span class="fw-semibold">Top Recommended Destinations</span>
+    <a href="#" class="text-decoration-none">Rajasthan</a>
+    <a href="#" class="text-decoration-none">Kerala</a>
+    <a href="#" class="text-decoration-none">Andaman and Nicobar</a>
+    <a href="#" class="text-decoration-none">North East</a>
+    <a href="#" class="text-decoration-none">Sikkim Darjeeling</a>
+  </div>
+            <div class="row">
+              <!-- Left Tabs -->
+              <div class="col-3 border-end">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
+                  <button class="nav-link active" id="north-tab" data-bs-toggle="pill" data-bs-target="#north" type="button" role="tab">North India</button>
+                  <button class="nav-link" id="south-tab" data-bs-toggle="pill" data-bs-target="#south" type="button" role="tab">South India</button>
+                  <button class="nav-link" id="east-tab" data-bs-toggle="pill" data-bs-target="#east" type="button" role="tab">East & North East India</button>
+                  <button class="nav-link" id="rajasthan-tab" data-bs-toggle="pill" data-bs-target="#rajasthan" type="button" role="tab">Rajasthan, West & Central India</button>
+                </div>
+              </div>
+
+              <!-- Right Content -->
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                  
+                  <!-- North India -->
+                  <div class="tab-pane fade show active" id="north" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <h6><a href="#">All of North India</a></h6>
+                        <h6>Delhi</h6>
+                        <h6>Himachal Pradesh</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Chandrataal</a></li>
+                          <li><a href="#">Dalhousie</a></li>
+                          <li><a href="#">Dharamshala</a></li>
+                          <li><a href="#">Manali</a></li>
+                          <li><a href="#">Shimla</a></li>
+                          <li><a href="#">Spiti Valley</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>Kashmir</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Gulmarg</a></li>
+                          <li><a href="#">Pahalgam</a></li>
+                          <li><a href="#">Sonmarg</a></li>
+                          <li><a href="#">Srinagar</a></li>
+                        </ul>
+                        <h6>Leh-Ladakh</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Kargil</a></li>
+                          <li><a href="#">Leh</a></li>
+                          <li><a href="#">Nubra Valley</a></li>
+                          <li><a href="#">Pangong Tso</a></li>
+                          <li><a href="#">Turtuk</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>Amritsar</h6>
+                        <h6>Chandigarh</h6>
+                        <h6>Punjab & Haryana</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Kurukshetra</a></li>
+                          <li><a href="#">Panipat</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>Uttarakhand</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Jim Corbett Park</a></li>
+                          <li><a href="#">Haridwar</a></li>
+                          <li><a href="#">Mussoorie</a></li>
+                          <li><a href="#">Nainital</a></li>
+                        </ul>
+                        <h6>Uttar Pradesh</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Agra</a></li>
+                          <li><a href="#">Ayodhya</a></li>
+                          <li><a href="#">Lucknow</a></li>
+                          <li><a href="#">Mathura</a></li>
+                          <li><a href="#">Varanasi</a></li>
+                          <li><a href="#">Vrindavan</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- South India -->
+                  <div class="tab-pane fade" id="south" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-3"><h6>Tamil Nadu</h6><ul class="list-unstyled"><li><a href="#">Chennai</a></li><li><a href="#">Madurai</a></li></ul></div>
+                      <div class="col-md-3"><h6>Kerala</h6><ul class="list-unstyled"><li><a href="#">Munnar</a></li><li><a href="#">Alleppey</a></li></ul></div>
+                      <div class="col-md-3"><h6>Karnataka</h6><ul class="list-unstyled"><li><a href="#">Bangalore</a></li><li><a href="#">Mysore</a></li></ul></div>
+                      <div class="col-md-3"><h6>Andhra Pradesh</h6><ul class="list-unstyled"><li><a href="#">Tirupati</a></li></ul></div>
+                    </div>
+                  </div>
+
+                  <!-- East India -->
+                  <div class="tab-pane fade" id="east" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-3"><h6>West Bengal</h6><ul class="list-unstyled"><li><a href="#">Kolkata</a></li><li><a href="#">Darjeeling</a></li></ul></div>
+                      <div class="col-md-3"><h6>Assam</h6><ul class="list-unstyled"><li><a href="#">Guwahati</a></li><li><a href="#">Kaziranga</a></li></ul></div>
+                      <div class="col-md-3"><h6>Meghalaya</h6><ul class="list-unstyled"><li><a href="#">Shillong</a></li><li><a href="#">Cherrapunji</a></li></ul></div>
+                      <div class="col-md-3"><h6>Sikkim</h6><ul class="list-unstyled"><li><a href="#">Gangtok</a></li></ul></div>
+                    </div>
+                  </div>
+
+                  <!-- Rajasthan -->
+                  <div class="tab-pane fade" id="rajasthan" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-3"><h6>Rajasthan</h6><ul class="list-unstyled"><li><a href="#">Jaipur</a></li><li><a href="#">Udaipur</a></li><li><a href="#">Jodhpur</a></li></ul></div>
+                      <div class="col-md-3"><h6>Gujarat</h6><ul class="list-unstyled"><li><a href="#">Ahmedabad</a></li><li><a href="#">Gir</a></li></ul></div>
+                      <div class="col-md-3"><h6>Madhya Pradesh</h6><ul class="list-unstyled"><li><a href="#">Khajuraho</a></li><li><a href="#">Bhopal</a></li></ul></div>
+                      <div class="col-md-3"><h6>Maharashtra</h6><ul class="list-unstyled"><li><a href="#">Mumbai</a></li><li><a href="#">Aurangabad</a></li></ul></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">World</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Europe</a></li>
-              <li><a class="dropdown-item" href="#">Asia</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" href="#world" role="button" data-bs-toggle="dropdown">World</a>
+          <div class="dropdown-menu p-3 mega-dropdown world-menu" style="width:1000px;">
+    <div class="row">
+      
+      <!-- Left Tabs -->
+      <div class="col-3 border-end">
+        <div class="nav flex-column nav-pills" id="world-tab" role="tablist">
+          <button class="nav-link active" id="africa-tab" data-bs-toggle="pill" data-bs-target="#africa" type="button" role="tab">Africa</button>
+          <button class="nav-link" id="america-tab" data-bs-toggle="pill" data-bs-target="#america" type="button" role="tab">America</button>
+          <button class="nav-link" id="asia-tab" data-bs-toggle="pill" data-bs-target="#asia" type="button" role="tab">Asia</button>
+          <button class="nav-link" id="australia-tab" data-bs-toggle="pill" data-bs-target="#australia" type="button" role="tab">Australia & New Zealand</button>
+          <button class="nav-link" id="europe-tab" data-bs-toggle="pill" data-bs-target="#europe" type="button" role="tab">Europe</button>
+          <button class="nav-link" id="middleeast-tab" data-bs-toggle="pill" data-bs-target="#middleeast" type="button" role="tab">Middle East</button>
+          <button class="nav-link" id="antarctica-tab" data-bs-toggle="pill" data-bs-target="#antarctica" type="button" role="tab">Antarctica</button>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-9">
+        <div class="tab-content" id="world-tabContent">
+          
+          <!-- Africa -->
+          <div class="tab-pane fade show active" id="africa" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>Egypt</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Cairo</a></li>
+                  <li><a href="#">Luxor</a></li>
+                  <li><a href="#">Aswan</a></li>
+                  <li><a href="#">Alexandria</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Kenya</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Masai Mara</a></li>
+                  <li><a href="#">Nairobi</a></li>
+                </ul>
+                <h6>South Africa</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Cape Town</a></li>
+                  <li><a href="#">Johannesburg</a></li>
+                  <li><a href="#">Sun City</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Tanzania</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Serengeti</a></li>
+                  <li><a href="#">Zanzibar</a></li>
+                </ul>
+                <h6>Zimbabwe</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Victoria Falls</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- America -->
+          <div class="tab-pane fade" id="america" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>USA</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">New York</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                  <li><a href="#">Las Vegas</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Canada</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Toronto</a></li>
+                  <li><a href="#">Vancouver</a></li>
+                  <li><a href="#">Niagara Falls</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Brazil</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Rio de Janeiro</a></li>
+                  <li><a href="#">São Paulo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asia -->
+          <div class="tab-pane fade" id="asia" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>Japan</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Tokyo</a></li>
+                  <li><a href="#">Kyoto</a></li>
+                  <li><a href="#">Osaka</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>China</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Beijing</a></li>
+                  <li><a href="#">Shanghai</a></li>
+                  <li><a href="#">Hong Kong</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Thailand</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Bangkok</a></li>
+                  <li><a href="#">Phuket</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Australia & New Zealand -->
+          <div class="tab-pane fade" id="australia" role="tabpanel">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Australia</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Sydney</a></li>
+                  <li><a href="#">Melbourne</a></li>
+                  <li><a href="#">Gold Coast</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6>New Zealand</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Auckland</a></li>
+                  <li><a href="#">Queenstown</a></li>
+                  <li><a href="#">Rotorua</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Europe -->
+          <div class="tab-pane fade" id="europe" role="tabpanel">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>France</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Paris</a></li>
+                  <li><a href="#">Nice</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Italy</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Rome</a></li>
+                  <li><a href="#">Venice</a></li>
+                  <li><a href="#">Milan</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6>Switzerland</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Zurich</a></li>
+                  <li><a href="#">Lucerne</a></li>
+                  <li><a href="#">Interlaken</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle East -->
+          <div class="tab-pane fade" id="middleeast" role="tabpanel">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>UAE</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Dubai</a></li>
+                  <li><a href="#">Abu Dhabi</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6>Turkey</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Istanbul</a></li>
+                  <li><a href="#">Cappadocia</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Antarctica -->
+          <div class="tab-pane fade" id="antarctica" role="tabpanel">
+            <div class="row">
+              <div class="col-md-12">
+                <h6>Popular Cruises</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">South Pole Expeditions</a></li>
+                  <li><a href="#">Penguin Tours</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Speciality Tours</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Europe</a></li>
-              <li><a class="dropdown-item" href="#">Asia</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" href="#speciality" role="button" data-bs-toggle="dropdown">Speciality Tours</a>
+         
+  <div class="dropdown-menu p-4 mega-dropdown speciality-menu" style="width:1100px;">
+    <div class="row">
+
+      <!-- Bestselling Tours -->
+      <div class="col-md-12 mb-3">
+        <h6 class="section-title">BESTSELLING TOURS</h6>
+        <div class="d-flex flex-wrap gap-4">
+          <a href="#" class="special-link">Women's Special <span>(109 Departures)</span></a>
+          <a href="#" class="special-link">Seniors' Special <span>(85 Departures)</span></a>
+          <a href="#" class="special-link">Family Tour Packages <span>(1302 Departures)</span></a>
+        
+        </div>
+      </div>
+
+      <!-- Something New To Try -->
+      <div class="col-md-12 mb-3 border-top pt-3">
+        <h6 class="section-title">SOMETHING NEW TO TRY</h6>
+        <div class="d-flex flex-wrap gap-4">
+          <a href="#" class="special-link">Couples Only <span>(4 Departures)</span></a>
+          <a href="#" class="special-link">Luxury Group Tours <span>(2 Departures)</span></a>
+          <a href="#" class="special-link">Post Tour Holidays</a>
+          <a href="#" class="special-link">Short Trips <span>(95 Departures)</span></a>
+          <a href="#" class="special-link">YOLO Outdoors <span>(10 Departures)</span></a>
+        </div>
+      </div>
+
+      <!-- Newly Launched -->
+      <div class="col-md-12 mb-3 border-top pt-3 bg-light">
+        <span class="badge new-badge">Newly Launched</span>
+        <div class="d-flex flex-wrap gap-4 mt-2">
+          <a href="#" class="special-link">Women's Special with Kids <span>(6 Departures)</span></a>
+          <a href="#" class="special-link">Women's Special Shopping and Food Tours</a>
+          <a href="#" class="special-link">Women's Special Spiritual Tours <span>(2 Departures)</span></a>
+          <a href="#" class="special-link">Grandparents and Grandchildren Special Tours <span>(6 Departures)</span></a>
+        </div>
+      </div>
+
+      <!-- Departures to Launch Soon -->
+      <div class="col-md-12 border-top pt-3">
+        <h6 class="section-title">Departures to launch soon</h6>
+        <div class="d-flex flex-wrap gap-4">
+          <a href="#" class="special-link">One Week One Place</a>
+          <a href="#" class="special-link">Road Trips</a>
+          <a href="#" class="special-link">Treks & Hikes</a>
+          <a href="#" class="special-link">City Walks & Day Trips</a>
+          <a href="#" class="special-link">Students' Special</a>
+          <a href="#" class="special-link">Women's Special YOLO Tours</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
           </li>
            <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Customized Holidays</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Europe</a></li>
-              <li><a class="dropdown-item" href="#">Asia</a></li>
-            </ul>
+            <a class="nav-link dropdown-toggle" href="#customized" role="button" data-bs-toggle="dropdown">Customized Holidays</a>
+       
+  
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Corporate Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="corporate">Corporate Travel</a></li>
           <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Inbound</a>
             <ul class="dropdown-menu">
@@ -108,6 +476,28 @@
     </div>
   </nav>
 
+  <!-- Smooth Scroll Script -->
+<script>
+  document.querySelectorAll('.nav-link, .dropdown-item').forEach(link => {
+    link.addEventListener('click', function (e) {
+      let targetId = this.getAttribute('href');
+      if (targetId.startsWith('#')) {
+        e.preventDefault(); 
+        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+<script>
+document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]').forEach(link => {
+  link.addEventListener('click', function() {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target.classList.contains('show')) {
+      new bootstrap.Collapse(target, { toggle: true }).hide();
+    }
+  });
+});
+</script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

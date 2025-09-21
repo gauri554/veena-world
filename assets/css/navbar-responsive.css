@@ -219,3 +219,273 @@
   }
 }
 
+
+
+/* ------------------ DESKTOP (keep existing hover behaviour) ------------------ */
+/* (keeps your existing "hover makes India white & slides down" behaviour) */
+.navbar .nav-item.dropdown:hover > .nav-link {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+/* Hover animation for desktop */
+.navbar .dropdown-menu {
+  display: block;               /* keep in flow but hidden via opacity */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: all 0.28s ease;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Mega dropdown base layout / visual (desktop) */
+.mega-dropdown {
+  width: 1000px;
+  max-width: 1000px;
+  left: 0 !important;
+  transform: none !important;
+  top: 100%;
+  background: #fff;
+  border-top: 3px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+/* vertical tabs (desktop) */
+.mega-dropdown .nav-pills .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  border-radius: 0;
+  padding: 10px 15px;
+}
+.mega-dropdown .nav-pills .nav-link.active {
+  color: #007bff !important;
+  border-left: 3px solid #007bff;
+  font-weight: 600;
+  background: transparent;
+}
+
+/* content columns (desktop) */
+.mega-dropdown .tab-content h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+.mega-dropdown .tab-content ul { margin: 0; padding: 0; }
+.mega-dropdown .tab-content ul li { margin-bottom: 6px; }
+.mega-dropdown .tab-content ul li a { color: #555; text-decoration: none; font-size: 14px; }
+.mega-dropdown .tab-content ul li a:hover { color: #007bff; }
+
+/* ------------------ MOBILE / TABLET (<= 991.98px) ------------------ */
+@media (max-width: 991.98px) {
+
+  /* Disable hover animation logic on small screens; rely on .show class instead */
+  .navbar .dropdown-menu {
+    display: none !important;            /* hidden until .show is added */
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  /* When the dropdown is toggled (Bootstrap adds .show), show it */
+  .navbar .nav-item.show .dropdown-menu,
+  .navbar .dropdown-menu.show {
+    display: block !important;
+  }
+
+  /* Make mega dropdown full width and flow inside collapsed navbar */
+  .mega-dropdown {
+    position: static !important;
+    width: 600px !important;
+    max-width: 600px !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-top: none !important;
+    background: #fff;
+    overflow: visible;
+  }
+
+  /* Stack bootstrap columns vertically for easy tap targets */
+  .mega-dropdown .row { display: block; margin: 0; }
+  .mega-dropdown .col-3,
+  .mega-dropdown .col-md-3,
+  .mega-dropdown .col-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 12px 18px !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  /* Convert vertical nav-pills to a horizontally scrollable strip (tappable) */
+  .mega-dropdown .nav-pills {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    margin-bottom: 0;
+  }
+  .mega-dropdown .nav-pills .nav-link {
+    white-space: nowrap;
+    border-left: none;
+    border-right: none;
+    padding: 8px 12px;
+    background: transparent;
+    flex: 0 0 auto;
+  }
+
+  /* Make content use tighter spacing on mobile */
+  .mega-dropdown .tab-content { padding: 12px 15px; background: #fff; }
+  .mega-dropdown .tab-content h6 { border-bottom: none; padding-bottom: 0; margin-top: 0; }
+
+  /* Don't apply desktop hover highlight on small screens; use .show when dropdown opened */
+  .navbar .nav-item.dropdown:hover > .nav-link { background: transparent !important; color: inherit !important; }
+  .navbar .nav-item.show > .nav-link { background: #fff !important; color: #000 !important; }
+
+  /* Make collapsed navbar area white so items are visible */
+  .navbar-collapse { background: #fff; padding: 0; }
+
+  /* Improve touch scrolling inside the mega dropdown (if menu tall) */
+  .mega-dropdown { overflow: auto; max-height: 70vh; -webkit-overflow-scrolling: touch; }
+}
+
+
+
+
+/* ---------------- MOBILE / TABLET FIXES ---------------- */
+@media (max-width: 991.98px) {
+  /* Make collapsed navbar background white */
+  .navbar-collapse {
+    background: #fff;
+    padding: 0;
+  }
+
+  /* Top-level nav items (India, World, etc.) */
+  .navbar .nav-link {
+    color: #333 !important;         /* Dark text */
+    font-weight: 600;
+    padding: 12px 15px;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-item.show > .nav-link {
+    background: #f8f9fa !important; /* Light gray background */
+    color: #007bff !important;      /* Blue active */
+  }
+
+  /* Mega dropdown in mobile */
+  .mega-dropdown {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #fff;
+    overflow: auto;
+    max-height: 70vh;               /* scrollable if too tall */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Stack all columns vertically */
+  .mega-dropdown .row {
+    display: block;
+    margin: 0;
+  }
+  .mega-dropdown .col-md-3,
+  .mega-dropdown .col-3,
+  .mega-dropdown .col-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Vertical tabs (convert to simple list for mobile) */
+  .mega-dropdown .nav-pills {
+    display: block !important;
+    border-bottom: 1px solid #eee;
+    padding: 8px 12px;
+    background: #fff;
+  }
+  .mega-dropdown .nav-pills .nav-link {
+    display: block;
+    padding: 10px;
+    color: #333 !important;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  .mega-dropdown .nav-pills .nav-link.active {
+    background: #f8f9fa;
+    color: #007bff !important;
+    font-weight: 600;
+  }
+
+  /* Tab content */
+  .mega-dropdown .tab-content {
+    padding: 10px 15px;
+    background: #fff;
+  }
+  .mega-dropdown .tab-content h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #222;
+    border-bottom: none;
+  }
+  .mega-dropdown .tab-content ul li a {
+    font-size: 14px;
+    color: #555;
+  }
+  .mega-dropdown .tab-content ul li a:hover {
+    color: #007bff;
+  }
+}
+
+/* ---------------- EXTRA SMALL DEVICES (≤364px) ---------------- */
+@media (max-width: 364px) {
+  /* Reduce font size & padding */
+  .navbar .nav-link {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .mega-dropdown .nav-pills .nav-link {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .mega-dropdown .tab-content h6 {
+    font-size: 13px;
+  }
+  .mega-dropdown .tab-content ul li a {
+    font-size: 13px;
+  }
+
+  /* Allow horizontal scroll if content too wide */
+  .mega-dropdown {
+    overflow-x: auto;
+  }
+}
+@media (min-width: 991px) and (max-width: 1092px) {
+  .mega-dropdown {
+    width: 600px !important;
+    max-width: 600px !important;
+  }
+}
