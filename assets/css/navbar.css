@@ -333,4 +333,23 @@
 }
 
 
+
+/* navbar toggler */
+
+/* Hide “X” by default */
+.navbar-toggler .close-icon {
+  display: none;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+/* Show “X”, hide hamburger when menu is open */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: none;
+}
+.navbar-toggler:not(.collapsed) .close-icon {
+  display: inline-block;
+}
+
+
 /* Customized Holidays */

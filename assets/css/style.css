@@ -94,3 +94,10 @@
       padding: 10px 25px;
       border-radius: 8px;
     }
+
+
+    /* Listing Intro section */
+
+    .breadcumb .small li a{
+        font-size: 0.2rem;
+    }

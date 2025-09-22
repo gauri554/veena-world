@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+  <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/navbar-responsive.css">
    
@@ -20,9 +21,16 @@
     <div class="container d-flex flex-wrap align-items-center justify-content-between  ">
     <div class="row-1">
        
-     <button class="navbar-toggler d-lg-none me-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
-          <span class="navbar-toggler-icon text-white"></span>
-        </button>
+       <button class="navbar-toggler collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarLinks"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="close-icon">&times;</span> <!-- ✖ icon -->
+    </button>
+    
         <!-- Logo -->
       <a class="navbar-brand fw-bold text-white nav-logo" href="#">
         <img src="assets/img/veena-world-logo.svg" alt="Veena World" height="30"  class="d-none d-md-block">
@@ -65,7 +73,7 @@
 
               <div class="d-flex flex-wrap gap-3 border-bottom pb-2 mb-3">
     <span class="fw-semibold">Top Recommended Destinations</span>
-    <a href="#" class="text-decoration-none">Rajasthan</a>
+    <a href="listing.html" class="text-decoration-none">Rajasthan</a>
     <a href="#" class="text-decoration-none">Kerala</a>
     <a href="#" class="text-decoration-none">Andaman and Nicobar</a>
     <a href="#" class="text-decoration-none">North East</a>
